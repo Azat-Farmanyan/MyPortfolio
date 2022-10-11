@@ -1,0 +1,22 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { SkillCardComponent } from './components/skill-card/skill-card.component';
+
+@NgModule({
+  declarations: [
+    HomeComponent,
+    AboutComponent,
+    SkillsComponent,
+    ProjectsComponent,
+    ProjectCardComponent,
+    SkillCardComponent,
+  ],
+  imports: [CommonModule],
+  exports: [HomeComponent, AboutComponent, SkillsComponent, ProjectsComponent],
+})
+export class CoreModule {}
