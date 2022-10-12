@@ -6,6 +6,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { SkillCardComponent } from './components/skill-card/skill-card.component';
+import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { SkillCardComponent } from './components/skill-card/skill-card.component
     ProjectCardComponent,
     SkillCardComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, AngularTypewriterEffectModule],
   exports: [HomeComponent, AboutComponent, SkillsComponent, ProjectsComponent],
 })
 export class CoreModule {}

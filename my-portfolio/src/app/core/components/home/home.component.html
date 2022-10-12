@@ -1,1 +1,26 @@
-<p>home works!</p>
+<main class='main'>
+  <ng-content></ng-content>
+  <div class="content">
+    <div class="main-body">
+
+      <ngtypewriter *ngIf="helloWorld;else staticHelloWorld" class='big-title' [StringList]='list' [speed]='1000'>
+      </ngtypewriter>
+      <ng-template #staticHelloWorld>
+        <h2 #mainTitle class='big-title'>
+          I am Azat Farmanyan, a Front-end Developer and this is my online portfolio
+        </h2>
+      </ng-template>
+
+      <ngtypewriter *ngIf="!helloWorld" class='big-subtitle main-page-text' [StringList]='aboutMe' [speed]='1500'>
+      </ngtypewriter>
+
+      <div class="social-network-block">
+        <a class='social-network' *ngFor="let socialMedia of socialMedias.socialMedia" target='_blank'
+          [href]="socialMedia.url">
+          <img [src]="iconPath + socialMedia.img" [alt]="socialMedia.name">
+        </a>
+      </div>
+      <img class='arrow-down' [src]="iconPath + 'arrow-down.png'" alt="arrow-down">
+    </div>
+  </div>
+</main>

@@ -1,0 +1,31 @@
+.main {
+  background: url(../../../../assets/bg/pc-bg.png) center / cover no-repeat;
+  width: 100%;
+  min-height: 900px;
+  .main-body {
+    margin: 110px auto 0;
+    max-width: 700px;
+    min-height: 577px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-direction: column;
+    gap: 50px;
+    .social-network-block {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      .social-network {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        object-fit: cover;
+      }
+    }
+    .arrow-down {
+      width: 29px;
+      margin: 0 auto;
+    }
+  }
+}

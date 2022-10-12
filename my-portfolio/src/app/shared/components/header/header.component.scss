@@ -1,0 +1,45 @@
+.header {
+  min-height: 88px;
+  .header-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .page-logo {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 30px;
+      cursor: pointer;
+      transition: all 0.5s ease;
+    }
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      min-width: 480px;
+      position: relative;
+      .nav-item {
+        display: block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--gray);
+        transition: all 0.5s ease;
+        &:hover {
+          color: var(--white);
+        }
+      }
+      .active {
+        cursor: pointer;
+        background-color: var(--violet);
+        padding: 32px 24px;
+        transition: all 0.5s ease;
+        &:hover {
+          background-color: var(--light-violet);
+        }
+      }
+    }
+  }
+}

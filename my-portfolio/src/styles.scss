@@ -1,1 +1,149 @@
-/* You can add global styles to this file, and also import other style files */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+//---------------
+
+:root {
+  --white: #ffffff;
+  --gray: #cecece;
+
+  --black: #0d0d0d;
+  --light-black: #181823;
+  --violet: #7e1185;
+  --light-violet: #ac00b7;
+
+  --orange: #f16529;
+  --css-blue: #1c88c7;
+  --typescript-blue: #017acb;
+  --yellow: #ffde25;
+  --pink: #cc6699;
+  --red: #c3002f;
+}
+body {
+  font-family: "Nanum Gothic Coding", monospace;
+  color: #fff;
+  background-color: var(--black);
+}
+.content {
+  padding: 0 40px;
+}
+
+//   title styles
+.big-title {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 65px;
+}
+.big-subtitle {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 150%;
+}
+.category-title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+.bold-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+.normal-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+}
+.big-text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+}
