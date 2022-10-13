@@ -11,24 +11,36 @@ export interface socialMedia {
 })
 export class SocialMediaService {
   socialMedia: socialMedia[] = [
-    { img: 'akar-icons_github-fill.png', name: 'github', url: 'github' },
+    {
+      img: 'akar-icons_github-fill.png',
+      name: 'github',
+      url: 'https://github.com/Azat-Farmanyan',
+    },
     {
       img: 'akar-icons_linkedin-box-fill.png',
       name: 'linkedin',
-      url: 'linkedin',
+      url: 'https://ge.linkedin.com/',
     },
     {
       img: 'ant-design_facebook-filled.png',
       name: 'facebook',
-      url: 'facebook',
+      url: 'https://www.facebook.com/profile.php?id=100007929288834',
     },
     {
       img: 'ant-design_instagram-filled.png',
       name: 'instagram',
-      url: 'instagram',
+      url: 'https://www.instagram.com/azat_09.5/',
     },
-    { img: 'akar-icons_telegram-fill.png', name: 'telegram', url: 'telegram' },
-    { img: 'akar-icons_discord-fill.png', name: 'discord', url: 'discord' },
+    {
+      img: 'akar-icons_telegram-fill.png',
+      name: 'telegram',
+      url: 'https://t.me/AzatFarmanyan',
+    },
+    {
+      img: 'akar-icons_discord-fill.png',
+      name: 'discord',
+      url: 'https://discordapp.com/users/908978735020146719/',
+    },
   ];
   constructor() {}
 }

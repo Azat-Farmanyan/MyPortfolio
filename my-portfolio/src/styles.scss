@@ -150,11 +150,18 @@ body {
     }
   }
 }
-.category-title {
+.category-title-big {
   font-weight: 700;
   font-size: 50px;
   line-height: 50px;
   text-transform: uppercase;
+}
+.category-title-small {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: var(--gray);
 }
 .bold-title {
   font-weight: 700;
@@ -171,4 +178,7 @@ body {
   font-weight: 400;
   font-size: 24px;
   line-height: 150%;
+}
+.category-block {
+  max-width: 548px;
 }

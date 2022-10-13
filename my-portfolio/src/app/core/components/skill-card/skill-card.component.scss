@@ -1,0 +1,19 @@
+.card {
+  cursor: pointer;
+  background: #181823;
+  border-radius: 3px;
+  max-width: 407px;
+  height: 122px;
+  padding: 37px 37px 37px 160px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  .card-logo {
+    object-fit: cover;
+    min-width: 104px;
+    max-height: 119px;
+    position: absolute;
+    left: 30px;
+    top: -30px;
+  }
+}
