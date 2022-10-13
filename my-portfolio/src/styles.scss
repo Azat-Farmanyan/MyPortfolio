@@ -112,18 +112,43 @@ body {
 }
 .content {
   padding: 0 40px;
+  @media only screen and (max-width: 600px) {
+    & {
+      padding: 0 20px;
+    }
+  }
 }
 
 //   title styles
 .big-title {
   font-weight: 700;
   font-size: 65px;
-  line-height: 65px;
+  line-height: 100%;
+  @media only screen and (max-width: 900px) {
+    & {
+      font-size: 50px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    & {
+      font-size: 40px;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    & {
+      font-size: 30px;
+    }
+  }
 }
 .big-subtitle {
   font-weight: 400;
-  font-size: 30px;
+  font-size: 26px;
   line-height: 150%;
+  @media only screen and (max-width: 600px) {
+    & {
+      font-size: 16px;
+    }
+  }
 }
 .category-title {
   font-weight: 700;

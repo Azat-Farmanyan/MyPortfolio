@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { SocialMediaService } from '../../services/social-media.service';
 
 @Component({
@@ -7,6 +7,7 @@ import { SocialMediaService } from '../../services/social-media.service';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  @Input() lockPage: boolean = false;
   helloWorld = true;
   info = false;
   iconPath = '../../../../assets/icons/';

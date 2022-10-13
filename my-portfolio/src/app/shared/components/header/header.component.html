@@ -1,14 +1,32 @@
 <header class='header'>
-  <div class="content">
-    <div class="header-body">
+  <div *ngIf="!burgerIsOpen" class="content">
+    <div [ngClass]="{'padding-top': getScreenWidth<631}" class="header-body">
       <h1 class='page-logo'>F.Azat</h1>
-      <nav class='nav'>
+      <nav *ngIf="getScreenWidth>630;else burgerIcon" class='nav'>
         <a class='nav-item' href="#">About</a>
         <a class='nav-item' href="#">Technical Skills</a>
         <a class='nav-item' href="#">Projects</a>
         <div class='active'>
-          <a class='nav-item ' href="#">Contact</a>
+          <a class='nav-item' href="#">Contact</a>
         </div>
+      </nav>
+      <ng-template #burgerIcon>
+        <img (click)='openBurger()' src="../../../../assets/icons/burger.png" alt="burgerIcon">
+      </ng-template>
+    </div>
+  </div>
+
+  <div *ngIf="burgerIsOpen" class="burger-modal">
+    <div class="content">
+      <div class="burger-header">
+        <h1 class='page-logo'>F.Azat</h1>
+        <img (click)='closeBurger()' src="../../../../assets/icons/close-burger.png" alt="burgerIcon">
+      </div>
+      <nav class='nav'>
+        <a class='nav-item' href="#">About</a>
+        <a class='nav-item' href="#">Technical Skills</a>
+        <a class='nav-item' href="#">Projects</a>
+        <a class='nav-item' href="#">Contact</a>
       </nav>
     </div>
   </div>
