@@ -1,4 +1,4 @@
-<div class="card gradient-border">
+<div [appBorderColor]='skill.color' class="card">
   <img class="card-logo" [src]="pathToLogos+skill.img" [alt]="skill.name">
   <p class='card-text bold-title'>
     {{skill.text}}
