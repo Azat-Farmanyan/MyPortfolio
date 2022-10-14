@@ -2,14 +2,14 @@
   background: url(../../../../assets/bg/pc-2-bg.png) center / cover no-repeat;
   width: 100%;
   min-height: 854px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 100px 0;
   .about-body {
     margin-left: 210px;
     position: relative;
     margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @media only screen and (max-width: 900px) {
       & {
         margin-left: 180px;
@@ -46,14 +46,44 @@
           position: relative;
           width: 197px;
           height: 199px;
-          top: 25px;
-          left: 0;
+          top: -30px;
+          left: 90px;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        & {
+          left: 80px;
+        }
+      }
+      @media only screen and (max-width: 480px) {
+        & {
+          left: 50px;
+        }
+      }
+      @media only screen and (max-width: 440px) {
+        & {
+          left: 40px;
+        }
+      }
+      @media only screen and (max-width: 400px) {
+        & {
+          left: 30px;
+        }
+      }
+      @media only screen and (max-width: 380px) {
+        & {
+          left: 20px;
+        }
+      }
+      @media only screen and (max-width: 350px) {
+        & {
+          left: 10px;
         }
       }
     }
     .about-text-block {
+      position: relative;
       max-width: 977px;
-      top: 0;
       background: rgba(196, 196, 196, 0.25);
       border-radius: 3px;
       padding: 50px;

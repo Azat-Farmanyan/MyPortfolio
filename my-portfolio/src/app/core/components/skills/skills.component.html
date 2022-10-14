@@ -2,8 +2,11 @@
   <div class="content">
     <div class="category-block">
       <h2 class='category-title-small'>TECHNICAL SKILLS:</h2>
-      <h4 class='category-title-big'>Programming languages
-        and technologies: </h4>
+      <!-- <h4 class='category-title-big'>Programming languages
+        and technologies: </h4> -->
+      <ngtypewriter class='category-title-big' [StringList]="['Programming languages and technologies:']"
+        [speed]='1500'>
+      </ngtypewriter>
     </div>
     <div class="skills-body">
       <app-skill-card *ngFor="let skill of skills.skills" [skill]="skill"></app-skill-card>

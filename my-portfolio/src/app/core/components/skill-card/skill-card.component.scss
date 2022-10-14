@@ -1,6 +1,6 @@
 .card {
   cursor: pointer;
-  background: #181823;
+  background: var(--light-black);
   border-radius: 3px;
   max-width: 407px;
   height: 122px;
@@ -8,12 +8,68 @@
   display: flex;
   align-items: center;
   position: relative;
+  transition: all 1s ease;
+
+  @media only screen and (max-width: 400px) {
+    & {
+      padding: 26px 26px 26px 135px;
+      height: 150px;
+    }
+  }
+  &:hover {
+    box-shadow: 0.439811px 16.9943px 145px rgba(241, 101, 41, 0.05),
+      0.285063px 11.0148px 84.919px rgba(241, 101, 41, 0.037963),
+      0.169409px 6.54596px 46.1852px rgba(241, 101, 41, 0.0303704),
+      0.0879623px 3.39886px 23.5625px rgba(241, 101, 41, 0.025),
+      0.0358365px 1.38472px 11.8148px rgba(241, 101, 41, 0.0196296),
+      0.00814465px 0.314709px 5.70602px rgba(241, 101, 41, 0.012037);
+
+    --border-width: 1.5px;
+    position: relative;
+    border-radius: var(--border-width);
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: calc(-1 * var(--border-width));
+      left: calc(-1 * var(--border-width));
+      z-index: -1;
+      width: calc(100% + var(--border-width) * 2);
+      height: calc(100% + var(--border-width) * 2);
+      background: linear-gradient(
+        60deg,
+        hsl(224, 85%, 66%),
+        hsl(269, 85%, 66%),
+        hsl(314, 85%, 66%),
+        hsl(359, 85%, 66%),
+        hsl(44, 85%, 66%),
+        hsl(89, 85%, 66%),
+        hsl(134, 85%, 66%),
+        hsl(179, 85%, 66%)
+      );
+      background-size: 300% 300%;
+      background-position: 0 50%;
+      border-radius: calc(2 * var(--border-width));
+      animation: moveGradient 4s alternate infinite;
+    }
+    @keyframes moveGradient {
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+  }
+
   .card-logo {
-    object-fit: cover;
-    min-width: 104px;
+    object-fit: contain;
+    max-width: 104px;
     max-height: 119px;
     position: absolute;
     left: 30px;
     top: -30px;
+    @media only screen and (max-width: 400px) {
+      & {
+        max-width: 91px;
+      }
+    }
   }
 }

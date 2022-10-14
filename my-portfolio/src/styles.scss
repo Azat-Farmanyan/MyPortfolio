@@ -153,8 +153,13 @@ body {
 .category-title-big {
   font-weight: 700;
   font-size: 50px;
-  line-height: 50px;
+  line-height: 100%;
   text-transform: uppercase;
+  @media only screen and (max-width: 600px) {
+    & {
+      font-size: 35px;
+    }
+  }
 }
 .category-title-small {
   font-weight: 700;
@@ -166,7 +171,12 @@ body {
 .bold-title {
   font-weight: 700;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 100%;
+  @media only screen and (max-width: 400px) {
+    & {
+      font-size: 16px;
+    }
+  }
 }
 .normal-text {
   font-weight: 400;
@@ -178,7 +188,4 @@ body {
   font-weight: 400;
   font-size: 24px;
   line-height: 150%;
-}
-.category-block {
-  max-width: 548px;
 }
