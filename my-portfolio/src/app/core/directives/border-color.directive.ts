@@ -22,7 +22,7 @@ export class BorderColorDirective implements OnInit {
     this.r.setStyle(
       this.el.nativeElement,
       'background',
-      `linear-gradient(60deg, #181823, ${this.color})`
+      `linear-gradient(120deg, #181823, ${this.color})`
     );
   }
 
@@ -31,7 +31,7 @@ export class BorderColorDirective implements OnInit {
     this.r.setStyle(
       this.el.nativeElement,
       'background',
-      `linear-gradient(60deg, #181823, #181823)`
+      `linear-gradient(120deg, #181823, #181823)`
     );
   }
 }

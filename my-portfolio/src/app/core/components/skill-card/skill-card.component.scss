@@ -1,58 +1,28 @@
 .card {
-  cursor: pointer;
+  // cursor: none;
   background: var(--light-black);
   border-radius: 3px;
-  max-width: 407px;
+  max-width: 390px;
+  // max-width: 360px;
   height: 122px;
-  padding: 37px 37px 37px 160px;
+  padding: 30px 30px 30px 160px;
+  padding-left: 160px;
   display: flex;
   align-items: center;
   position: relative;
   transition: all 1s ease;
+  justify-content: space-between;
 
   @media only screen and (max-width: 400px) {
     & {
-      padding: 26px 26px 26px 135px;
-      height: 150px;
+      // padding: 26px 26px 26px 135px;
+      padding-left: 135px;
+      height: 91px;
     }
   }
-  // &:hover {
-  //   box-shadow: 0.439811px 16.9943px 145px rgba(241, 101, 41, 0.05),
-  //     0.285063px 11.0148px 84.919px rgba(241, 101, 41, 0.037963),
-  //     0.169409px 6.54596px 46.1852px rgba(241, 101, 41, 0.0303704),
-  //     0.0879623px 3.39886px 23.5625px rgba(241, 101, 41, 0.025),
-  //     0.0358365px 1.38472px 11.8148px rgba(241, 101, 41, 0.0196296),
-  //     0.00814465px 0.314709px 5.70602px rgba(241, 101, 41, 0.012037);
-
-  //   --border-width: 1.5px;
-  //   position: relative;
-  //   border-radius: var(--border-width);
-
-  //   &::after {
-  //     position: absolute;
-  //     content: "";
-  //     top: calc(-1 * var(--border-width));
-  //     left: calc(-1 * var(--border-width));
-  //     z-index: -1;
-  //     width: calc(100% + var(--border-width) * 2);
-  //     height: calc(100% + var(--border-width) * 2);
-  //     // background: linear-gradient(60deg, #181823, #f16529);
-
-  //     background-size: 300% 300%;
-  //     background-position: 0 50%;
-  //     border-radius: calc(2 * var(--border-width));
-  //     animation: moveGradient 4s alternate infinite;
-  //   }
-  //   @keyframes moveGradient {
-  //     50% {
-  //       background-position: 100% 50%;
-  //     }
-  //   }
-  // }
-
   .card-logo {
     object-fit: contain;
-    max-width: 104px;
+    max-width: 90px;
     max-height: 119px;
     position: absolute;
     left: 30px;
@@ -63,6 +33,9 @@
       }
     }
   }
+  .card-text {
+    cursor: context-menu;
+  }
 }
 .border-animation {
   box-shadow: 0.439811px 16.9943px 145px rgba(241, 101, 41, 0.05),
@@ -72,7 +45,7 @@
     0.0358365px 1.38472px 11.8148px rgba(241, 101, 41, 0.0196296),
     0.00814465px 0.314709px 5.70602px rgba(241, 101, 41, 0.012037);
 
-  --border-width: 2px;
+  --border-width: 1px;
   position: relative;
   border-radius: var(--border-width);
 
@@ -84,7 +57,7 @@
     z-index: -1;
     width: calc(100% + var(--border-width) * 2);
     height: calc(100% + var(--border-width) * 2);
-    background: linear-gradient(60deg, #181823, rgb(226, 226, 226));
+    background: linear-gradient(60deg, #181823, rgb(255, 255, 255));
 
     background-size: 300% 300%;
     background-position: 0 50%;

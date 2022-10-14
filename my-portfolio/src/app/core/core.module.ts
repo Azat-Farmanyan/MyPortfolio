@@ -8,6 +8,7 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
 import { SkillCardComponent } from './components/skill-card/skill-card.component';
 import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
 import { BorderColorDirective } from './directives/border-color.directive';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { BorderColorDirective } from './directives/border-color.directive';
     ProjectCardComponent,
     SkillCardComponent,
     BorderColorDirective,
+    CarouselComponent,
   ],
   imports: [CommonModule, AngularTypewriterEffectModule],
   exports: [HomeComponent, AboutComponent, SkillsComponent, ProjectsComponent],

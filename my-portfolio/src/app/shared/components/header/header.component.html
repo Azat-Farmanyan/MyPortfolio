@@ -1,13 +1,13 @@
-<header class='header'>
+<header class='header' (scroll)="onScroll($event)">
   <div *ngIf="!burgerIsOpen" class="content">
     <div [ngClass]="{'padding-top': getScreenWidth<631}" class="header-body">
-      <h1 class='page-logo'>F.Azat</h1>
+      <a class='page-logo' href="#Home">F.Azat</a>
       <nav *ngIf="getScreenWidth>630;else burgerIcon" class='nav'>
-        <a class='nav-item' href="#">About</a>
-        <a class='nav-item' href="#">Technical Skills</a>
-        <a class='nav-item' href="#">Projects</a>
+        <a class='nav-item' href="#Biography">Biography</a>
+        <a class='nav-item' href="#TechnicalSkills">Technical Skills</a>
+        <a class='nav-item' href="#Projects">Projects</a>
         <div class='active'>
-          <a class='nav-item' href="#">Contact</a>
+          <a class='nav-item' href="#Contact">Contact</a>
         </div>
       </nav>
       <ng-template #burgerIcon>
@@ -19,14 +19,14 @@
   <div *ngIf="burgerIsOpen" class="burger-modal">
     <div class="content">
       <div class="burger-header">
-        <h1 class='page-logo'>F.Azat</h1>
+        <a class='page-logo' href="#Home">F.Azat</a>
         <img (click)='closeBurger()' src="../../../../assets/icons/close-burger.png" alt="burgerIcon">
       </div>
       <nav class='nav'>
-        <a class='nav-item' href="#">About</a>
-        <a class='nav-item' href="#">Technical Skills</a>
-        <a class='nav-item' href="#">Projects</a>
-        <a class='nav-item' href="#">Contact</a>
+        <a (click)="closeBurger()" class='nav-item' href="#Biography">Biography</a>
+        <a (click)='closeBurger()' class='nav-item' href="#TechnicalSkills">Technical Skills</a>
+        <a (click)='closeBurger()' class='nav-item' href="#Projects">Projects</a>
+        <a (click)='closeBurger()' class='nav-item' href="#Contact">Contact</a>
       </nav>
     </div>
   </div>

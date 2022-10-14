@@ -1,0 +1,7 @@
+<div class="slider">
+  <div class="slide-track">
+    <div *ngFor="let instrument of skills.instruments" class="slide">
+      <img [src]="pathToLogos+ instrument.img" [alt]="instrument.name" />
+    </div>
+  </div>
+</div>

@@ -37,4 +37,7 @@ export class HeaderComponent implements OnInit {
     this.burgerIsOpen = false;
     this.onBurgerAction.emit(this.burgerIsOpen);
   }
+  onScroll(event: Event) {
+    console.log(event);
+  }
 }

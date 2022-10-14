@@ -40,6 +40,7 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 input,
@@ -188,4 +189,7 @@ body {
   font-weight: 400;
   font-size: 24px;
   line-height: 150%;
+}
+.category-block {
+  min-height: 130px;
 }

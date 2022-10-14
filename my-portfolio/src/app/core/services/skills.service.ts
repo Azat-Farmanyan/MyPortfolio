@@ -6,6 +6,10 @@ export interface skill {
   img: string;
   color: string;
 }
+export interface instrument {
+  img: string;
+  name: string;
+}
 
 @Injectable({
   providedIn: 'root',
@@ -49,6 +53,42 @@ export class SkillsService {
       color: '#DD0031',
     },
   ];
-
+  instruments: instrument[] = [
+    { img: 'git.png', name: 'Git' },
+    { img: 'devtools.png', name: 'devtools' },
+    { img: 'Figma logo.png', name: 'Figma' },
+    { img: 'Adobe logo.png', name: 'Adobe Photoshop' },
+    { img: 'illustrator logo.png', name: 'illustrator' },
+    { img: 'Sublime logo.png', name: 'Sublime' },
+    { img: 'vscode-original logo.png', name: 'vscode' },
+    { img: 'git.png', name: 'Git' },
+    { img: 'devtools.png', name: 'devtools' },
+    { img: 'Figma logo.png', name: 'Figma' },
+    { img: 'Adobe logo.png', name: 'Adobe Photoshop' },
+    { img: 'illustrator logo.png', name: 'illustrator' },
+    { img: 'Sublime logo.png', name: 'Sublime' },
+    { img: 'vscode-original logo.png', name: 'vscode' },
+    { img: 'git.png', name: 'Git' },
+    { img: 'devtools.png', name: 'devtools' },
+    { img: 'Figma logo.png', name: 'Figma' },
+    { img: 'Adobe logo.png', name: 'Adobe Photoshop' },
+    { img: 'illustrator logo.png', name: 'illustrator' },
+    { img: 'Sublime logo.png', name: 'Sublime' },
+    { img: 'vscode-original logo.png', name: 'vscode' },
+    { img: 'git.png', name: 'Git' },
+    { img: 'devtools.png', name: 'devtools' },
+    { img: 'Figma logo.png', name: 'Figma' },
+    { img: 'Adobe logo.png', name: 'Adobe Photoshop' },
+    { img: 'illustrator logo.png', name: 'illustrator' },
+    { img: 'Sublime logo.png', name: 'Sublime' },
+    { img: 'vscode-original logo.png', name: 'vscode' },
+    { img: 'git.png', name: 'Git' },
+    { img: 'devtools.png', name: 'devtools' },
+    { img: 'Figma logo.png', name: 'Figma' },
+    { img: 'Adobe logo.png', name: 'Adobe Photoshop' },
+    { img: 'illustrator logo.png', name: 'illustrator' },
+    { img: 'Sublime logo.png', name: 'Sublime' },
+    { img: 'vscode-original logo.png', name: 'vscode' },
+  ];
   constructor() {}
 }
