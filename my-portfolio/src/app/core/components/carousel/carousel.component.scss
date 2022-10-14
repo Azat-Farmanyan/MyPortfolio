@@ -1,17 +1,9 @@
-body {
-  // align-items: center;
-  // background: #e3e3e3;
-  // display: flex;
-  // height: 100vh;
-  // justify-content: center;
-}
-
 @mixin white-gradient {
-  background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
+  // background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
   // background: var(--light-black);
 }
 
-$animationSpeed: 40s;
+$animationSpeed: 90s;
 
 // Animation
 @keyframes scroll {
@@ -19,7 +11,7 @@ $animationSpeed: 40s;
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 17));
   }
 }
 
@@ -32,7 +24,18 @@ $animationSpeed: 40s;
   overflow: hidden;
   position: relative;
   // width: 100;
-
+  @media only screen and (max-width: 700px) {
+    & {
+      height: 80px;
+      margin: 80px auto 0;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    & {
+      height: 50px;
+      margin: 80px auto 0;
+    }
+  }
   &::before,
   &::after {
     @include white-gradient;
@@ -58,12 +61,38 @@ $animationSpeed: 40s;
     animation: scroll $animationSpeed linear infinite;
     display: flex;
     width: calc(250px * 14);
+
+    &:hover {
+      animation-play-state: paused;
+    }
   }
 
   .slide {
-    height: 80px;
-    max-width: 250px;
-    object-fit: contain;
+    // height: 80px;
+    // width: 250px;
+    object-fit: cover;
     margin: 0 50px;
+    & img {
+      height: 100px;
+      max-width: 250px;
+    }
+    @media only screen and (max-width: 700px) {
+      & {
+        margin: 0 40px;
+      }
+      & img {
+        max-height: 80px;
+        max-width: 250px;
+      }
+    }
+    @media only screen and (max-width: 700px) {
+      & {
+        margin: 0 30px;
+      }
+      & img {
+        max-height: 50px;
+        max-width: 250px;
+      }
+    }
   }
 }
