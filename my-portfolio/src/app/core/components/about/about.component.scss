@@ -3,6 +3,10 @@
   width: 100%;
   min-height: 854px;
   padding: 100px 0;
+  @media only screen and (max-width: 900px) {
+    & {
+    }
+  }
   .about-body {
     margin-left: 210px;
     position: relative;
@@ -33,6 +37,8 @@
       object-fit: cover;
       box-shadow: 0px 0px 87px -16px #260617;
       border-radius: 142.213px;
+      border-radius: 3px;
+
       @media only screen and (max-width: 1000px) {
         & {
           width: 224px;
@@ -48,15 +54,20 @@
           height: 199px;
           top: -30px;
           left: 90px;
+          border-radius: 3px;
         }
       }
       @media only screen and (max-width: 600px) {
         & {
+          width: 140px;
+          height: 143px;
           left: 80px;
         }
       }
       @media only screen and (max-width: 480px) {
         & {
+          width: 130px;
+          height: 133px;
           left: 50px;
         }
       }
@@ -87,11 +98,21 @@
       background: rgba(196, 196, 196, 0.25);
       border-radius: 3px;
       padding: 50px;
+      @media only screen and (max-width: 500px) {
+        & {
+          padding: 20px;
+        }
+      }
       .about-main-text {
         margin-bottom: 20px;
         display: flex;
         flex-direction: column;
         gap: 20px;
+        @media only screen and (max-width: 400px) {
+          & {
+            margin-bottom: 10px;
+          }
+        }
       }
     }
   }

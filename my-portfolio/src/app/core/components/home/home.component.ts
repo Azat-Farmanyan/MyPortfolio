@@ -1,4 +1,11 @@
-import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  HostListener,
+  Input,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { SocialMediaService } from '../../services/social-media.service';
 
 @Component({
@@ -8,6 +15,8 @@ import { SocialMediaService } from '../../services/social-media.service';
 })
 export class HomeComponent implements OnInit {
   @Input() lockPage: boolean = false;
+  public getScreenWidth!: number;
+  public getScreenHeight!: number;
   helloWorld = true;
   info = false;
   iconPath = '../../../../assets/icons/';
@@ -37,5 +46,13 @@ export class HomeComponent implements OnInit {
     setTimeout(() => {
       this.helloWorld = false;
     }, 11500);
+    this.getScreenWidth = window.innerWidth;
+    this.getScreenHeight = window.innerHeight;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onWindowResize() {
+    this.getScreenWidth = window.innerWidth;
+    this.getScreenHeight = window.innerHeight;
   }
 }

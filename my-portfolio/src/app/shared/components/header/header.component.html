@@ -11,7 +11,7 @@
         </div>
       </nav>
       <ng-template #burgerIcon>
-        <img (click)='openBurger()' src="../../../../assets/icons/burger.png" alt="burgerIcon">
+        <img class='open-burger' (click)='openBurger()' src="../../../../assets/icons/burger.png" alt="burgerIcon">
       </ng-template>
     </div>
   </div>
@@ -19,8 +19,9 @@
   <div *ngIf="burgerIsOpen" class="burger-modal">
     <div class="content">
       <div class="burger-header">
-        <a class='page-logo' href="#Home">F.Azat</a>
-        <img (click)='closeBurger()' src="../../../../assets/icons/close-burger.png" alt="burgerIcon">
+        <a (click)="closeBurger()" class='page-logo' href="#Home">F.Azat</a>
+        <img class='close-burger' (click)='closeBurger()' src="../../../../assets/icons/close-burger.png"
+          alt="burgerIcon">
       </div>
       <nav class='nav'>
         <a (click)="closeBurger()" class='nav-item' href="#Biography">Biography</a>

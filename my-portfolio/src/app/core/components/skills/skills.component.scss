@@ -9,5 +9,10 @@
     flex-wrap: wrap;
     justify-content: center;
     // align-items: center;
+    @media only screen and (max-width: 400px) {
+      & {
+        gap: 65px;
+      }
+    }
   }
 }

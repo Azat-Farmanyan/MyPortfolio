@@ -1,6 +1,7 @@
 <!-- <ng-content></ng-content> -->
 
-<main id='Home' class="main">
+<main id='Home' class="main" [ngStyle]="{
+  'min-height.px': getScreenHeight }">
   <div class="content">
     <div class="main-body">
 
@@ -21,7 +22,9 @@
           <img [src]="iconPath + socialMedia.img" [alt]="socialMedia.name">
         </a>
       </div>
-      <img class='arrow-down' [src]="iconPath + 'arrow-down.png'" alt="arrow-down">
+      <a href="#Biography">
+        <img class='arrow-down' [src]="iconPath + 'arrow-down.png'" alt="arrow-down">
+      </a>
     </div>
   </div>
 </main>

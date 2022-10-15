@@ -1,8 +1,10 @@
 .main {
   background: url(../../../../assets/bg/pc-bg.png) center / cover no-repeat;
   width: 100%;
-  min-height: 600px;
+  // min-height: 600px;
+
   padding-top: 200px;
+
   @media only screen and (max-width: 700px) {
     & {
       // height: 800px;
@@ -11,14 +13,25 @@
   .main-body {
     margin: 0 auto;
     max-width: 700px;
-    min-height: 577px;
+    // min-height: 577px;
     text-align: center;
     display: flex;
     // justify-content: center;
     align-content: space-between;
     flex-direction: column;
     gap: 50px;
-    padding-top: 150px;
+    padding-top: 130px;
+    @media only screen and (max-width: 650px) {
+      & {
+        padding-top: 90px;
+        // min-height: 450px;
+      }
+    }
+    @media only screen and (max-width: 400px) {
+      & {
+        padding-top: 80px;
+      }
+    }
     .social-network-block {
       display: flex;
       gap: 30px;
@@ -69,7 +82,7 @@
     }
     .arrow-down {
       width: 29px;
-      margin: 0 auto;
+      margin: 40px auto 0;
     }
   }
 }

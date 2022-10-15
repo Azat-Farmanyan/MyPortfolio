@@ -6,7 +6,6 @@
   // max-width: 360px;
   height: 122px;
   padding: 30px 30px 30px 160px;
-  padding-left: 160px;
   display: flex;
   align-items: center;
   position: relative;
@@ -15,8 +14,7 @@
 
   @media only screen and (max-width: 400px) {
     & {
-      // padding: 26px 26px 26px 135px;
-      padding-left: 135px;
+      padding: 26px 26px 26px 120px;
       height: 91px;
     }
   }
@@ -29,7 +27,7 @@
     top: -30px;
     @media only screen and (max-width: 400px) {
       & {
-        max-width: 91px;
+        max-width: 70px;
       }
     }
   }
@@ -37,6 +35,7 @@
     cursor: context-menu;
   }
 }
+
 .border-animation {
   box-shadow: 0.439811px 16.9943px 145px rgba(241, 101, 41, 0.05),
     0.285063px 11.0148px 84.919px rgba(241, 101, 41, 0.037963),
