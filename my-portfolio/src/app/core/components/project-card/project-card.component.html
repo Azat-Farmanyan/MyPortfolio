@@ -1,1 +1,22 @@
-<p>project-card works!</p>
+<div class="project-card">
+  <div class="project-card-body">
+    <div class="left-side">
+      <h4 class='bold-title'>{{project.title}}</h4>
+      <p class='normal-text'>{{project.description}}</p>
+      <div class="tools">
+        <div *ngFor="let tool of project.tools" class="tool">
+          <img [src]="pathToLogos+tool.img" [alt]="tool.name">
+        </div>
+      </div>
+      <div class="buttons-block">
+        <a target='_blank' class='btn violet-bg' [href]="project.url">See Live</a>
+        <a target='_blank' class='btn light-black-bg' [href]="project.sourceCodeUrl">Source Code</a>
+      </div>
+    </div>
+    <div class="right-side">
+      <!-- <img [src]="project.img" [alt]="project.title"> -->
+      <!-- <img src="../../../../assets/images/azat-avatar.png" [alt]="project.title"> -->
+      <img [src]="pathToImages+project.img" [alt]="project.title">
+    </div>
+  </div>
+</div>

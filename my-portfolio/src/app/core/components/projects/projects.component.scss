@@ -1,0 +1,9 @@
+.projects-block {
+  .projects-body {
+    display: flex;
+    flex-direction: column;
+    .projects {
+      margin: 0 auto;
+    }
+  }
+}

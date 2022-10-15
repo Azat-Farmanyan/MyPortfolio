@@ -48,7 +48,7 @@ export class SkillsService {
     },
     {
       name: 'Angular',
-      text: 'Angular is a web framework ',
+      text: 'Angular is a web framework',
       img: 'Angularlogo.png',
       color: '#DD0031',
     },
@@ -91,4 +91,11 @@ export class SkillsService {
     { img: 'vscode-original logo.png', name: 'vscode' },
   ];
   constructor() {}
+
+  getSkill(name: string) {
+    return this.skills.find((el) => el.name === name);
+  }
+  getInstrument(name: string) {
+    return this.instruments.find((el) => el.name === name);
+  }
 }

@@ -97,7 +97,7 @@ h6 {
   --black: #0d0d0d;
   --light-black: #181823;
   --violet: #7e1185;
-  --light-violet: #ac00b7;
+  --light-violet: #b000bd;
 
   --orange: #f16529;
   --css-blue: #1c88c7;
@@ -175,7 +175,7 @@ body {
   line-height: 100%;
   @media only screen and (max-width: 400px) {
     & {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
 }
@@ -184,6 +184,12 @@ body {
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.1em;
+  @media only screen and (max-width: 800px) {
+    & {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
 }
 .big-text {
   font-weight: 400;
@@ -192,4 +198,32 @@ body {
 }
 .category-block {
   min-height: 130px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  transition: all 0.5s ease;
+  border-radius: 3px;
+  @media only screen and (max-width: 800px) {
+    & {
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+  }
+}
+.violet-bg {
+  background-color: var(--violet);
+  &:hover {
+    background-color: var(--light-violet);
+  }
+}
+.light-black-bg {
+  background-color: var(--light-black);
+  &:hover {
+    filter: brightness(1.3);
+  }
 }
