@@ -2,17 +2,52 @@
   background-color: var(--light-black);
   padding: 100px 0;
   margin-top: 150px;
+  @media only screen and (max-width: 900px) {
+    & {
+      margin-top: 90px;
+    }
+  }
+  @media only screen and (max-width: 610px) {
+    & {
+      margin-top: 60px;
+      padding: 50px 0;
+    }
+  }
   .footer-body {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    .page-logo {
-      color: var(--white);
+    gap: 20px;
+    @media only screen and (max-width: 610px) {
+      & {
+        flex-direction: column;
+        // align-items: center;
+      }
     }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+
+      & img {
+        height: 20px;
+
+        @media only screen and (max-width: 610px) {
+          & {
+            height: 20px;
+          }
+        }
+      }
+      .page-logo {
+        color: var(--white);
+      }
+    }
+
     .contacts {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 10px;
       .contacts-body {
         display: flex;
         flex-direction: column;
@@ -25,7 +60,7 @@
     .nav {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 10px;
       .nav-body {
         display: flex;
         flex-direction: column;
@@ -46,6 +81,12 @@
   display: flex;
   gap: 30px;
   justify-content: center;
+  align-items: center;
+  @media only screen and (max-width: 600px) {
+    & {
+      margin: 0 auto;
+    }
+  }
   @media only screen and (max-width: 500px) {
     & {
       gap: 30px;
