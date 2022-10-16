@@ -91,7 +91,7 @@ h6 {
 //---------------
 
 :root {
-  --white: #ffffff;
+  --white: #f1f1f1;
   --gray: #cecece;
 
   --black: #0d0d0d;
@@ -145,6 +145,7 @@ body {
   font-weight: 400;
   font-size: 26px;
   line-height: 150%;
+  color: var(--gray);
   @media only screen and (max-width: 600px) {
     & {
       font-size: 16px;
@@ -180,6 +181,7 @@ body {
   }
 }
 .normal-text {
+  // font-family: Arial;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;

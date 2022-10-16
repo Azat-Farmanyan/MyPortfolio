@@ -6,7 +6,7 @@ import {
   OnInit,
   ViewChild,
 } from '@angular/core';
-import { SocialMediaService } from '../../services/social-media.service';
+import { SocialMediaService } from '../../../shared/services/social-media.service';
 
 @Component({
   selector: 'app-home',

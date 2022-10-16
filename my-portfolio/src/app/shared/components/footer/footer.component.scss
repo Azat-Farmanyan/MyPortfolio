@@ -1,0 +1,92 @@
+.footer {
+  background-color: var(--light-black);
+  padding: 100px 0;
+  margin-top: 150px;
+  .footer-body {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .page-logo {
+      color: var(--white);
+    }
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .contacts-body {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .contact-item {
+        color: var(--gray);
+      }
+    }
+    .nav {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .nav-body {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .nav-item a {
+          cursor: pointer;
+          color: var(--gray);
+          &:hover {
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
+}
+
+.social-network-block {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  @media only screen and (max-width: 500px) {
+    & {
+      gap: 30px;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    & {
+      gap: 25px;
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    & {
+      gap: 20px;
+    }
+  }
+  @media only screen and (max-width: 310px) {
+    & {
+      gap: 15px;
+    }
+  }
+  @media only screen and (max-width: 270px) {
+    & {
+      gap: 10px;
+    }
+  }
+  .social-network {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    object-fit: cover;
+    @media only screen and (max-width: 1100px) {
+      & {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    @media only screen and (max-width: 800px) {
+      & {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

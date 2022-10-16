@@ -1,7 +1,45 @@
 <footer id='Contact' class="footer">
   <div class="content">
     <div class="footer-body">
-      Footer
+      <div class="header">
+        <a class='page-logo' href="#Home">
+          <h4 class='bold-title'>Azat Farmanyan</h4>
+          <p class='normal-text'>Front-end developer</p>
+        </a>
+      </div>
+
+      <div class="contacts">
+        <h5 class='normal-text'>My personal contacts</h5>
+        <div class="contacts-body">
+          <h5 class='normal-text contact-item'>+995 592 47 77 75</h5>
+          <h5 class='normal-text contact-item email'>azat.farmanyan@mail.ru</h5>
+        </div>
+      </div>
+      <nav class="nav">
+        <h5 class='normal-text'>Navigation</h5>
+
+        <div class="nav-body">
+          <div class="normal-text nav-item">
+            <a href="#Home">Home</a>
+          </div>
+          <div class="normal-text nav-item">
+            <a href="#Biography">About</a>
+          </div>
+          <div class="normal-text nav-item">
+            <a href="#TechnicalSkills">Technical Skills</a>
+          </div>
+          <div class="normal-text nav-item">
+            <a href="#Projects">Projects</a>
+          </div>
+        </div>
+
+      </nav>
+      <div class="social-network-block">
+        <a class='social-network' *ngFor="let socialMedia of socialMediaService.socialMedia" target='_blank'
+          [href]="socialMedia.url">
+          <img [src]="iconPath + socialMedia.img" [alt]="socialMedia.name">
+        </a>
+      </div>
     </div>
   </div>
 </footer>

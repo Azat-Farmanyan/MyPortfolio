@@ -5,11 +5,6 @@
 
   padding-top: 200px;
 
-  @media only screen and (max-width: 700px) {
-    & {
-      // height: 800px;
-    }
-  }
   .main-body {
     margin: 0 auto;
     max-width: 700px;
@@ -66,6 +61,12 @@
         height: 35px;
         display: flex;
         object-fit: cover;
+        opacity: 0.5;
+        transition: all 0.5s ease;
+        &:hover {
+          opacity: 1;
+          transform: scale(1.2);
+        }
         @media only screen and (max-width: 600px) {
           & {
             width: 30px;
@@ -81,8 +82,14 @@
       }
     }
     .arrow-down {
-      width: 29px;
+      width: 35px;
       margin: 40px auto 0;
+      opacity: 0.8;
+      transition: all 0.5s ease;
+      &:hover {
+        opacity: 1;
+        transform: scale(1.5);
+      }
     }
   }
 }
