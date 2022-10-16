@@ -72,10 +72,16 @@
     }
   }
   .social-network {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     display: flex;
     object-fit: cover;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+    &:hover {
+      opacity: 1;
+      transform: scale(1.2);
+    }
     @media only screen and (max-width: 1100px) {
       & {
         width: 25px;

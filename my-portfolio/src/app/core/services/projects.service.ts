@@ -49,6 +49,40 @@ export class ProjectsService {
       url: 'https://azat-farmanyan.github.io/English-for-kids/English-for-kids/pages/main/#',
       sourceCodeUrl: 'https://github.com/Azat-Farmanyan/English-for-kids',
     },
+    {
+      title: 'English For Kids',
+      description:
+        'The application is designed for children who want to learn English. The application has 2 modes: training mode, where children can learn new words, and game mode, where children can play by guessing the picture.',
+      img: 'englishforkids.jpg',
+      tools: [
+        this.skill('html'),
+        this.skill('CSS'),
+        this.skill('Sass'),
+        this.skill('JavaScript'),
+        this.instrument('vscode'),
+        this.instrument('Adobe Photoshop'),
+        this.instrument('Figma'),
+      ],
+      url: 'https://azat-farmanyan.github.io/English-for-kids/English-for-kids/pages/main/#',
+      sourceCodeUrl: 'https://github.com/Azat-Farmanyan/English-for-kids',
+    },
+    {
+      title: 'English For Kids',
+      description:
+        'The application is designed for children who want to learn English. The application has 2 modes: training mode, where children can learn new words, and game mode, where children can play by guessing the picture.',
+      img: 'englishforkids.jpg',
+      tools: [
+        this.skill('html'),
+        this.skill('CSS'),
+        this.skill('Sass'),
+        this.skill('JavaScript'),
+        this.instrument('vscode'),
+        this.instrument('Adobe Photoshop'),
+        this.instrument('Figma'),
+      ],
+      url: 'https://azat-farmanyan.github.io/English-for-kids/English-for-kids/pages/main/#',
+      sourceCodeUrl: 'https://github.com/Azat-Farmanyan/English-for-kids',
+    },
   ];
   skill(name: string) {
     return this.skillsService.getSkill(name);

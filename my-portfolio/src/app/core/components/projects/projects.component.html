@@ -7,9 +7,12 @@
         </ngtypewriter>
       </div>
       <div class="projects">
-        <app-project-card *ngFor="let project of projectService.projects" [project]="project"></app-project-card>
-
+        <app-project-card *ngFor="let project of projectService.projects | filterBySize:cuurentProjecstAmount"
+          [project]="project">
+        </app-project-card>
       </div>
+      <button *ngIf="cuurentProjecstAmount!==projectsAmount" (click)="viewAll()" class='btn white-bg view-btn'>View
+        all</button>
     </div>
   </div>
 </section>

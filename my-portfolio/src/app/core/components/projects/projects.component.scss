@@ -5,5 +5,19 @@
     .projects {
       margin: 0 auto;
     }
+    .view-btn {
+      width: 185px;
+      margin: 0 auto;
+      @media only screen and (max-width: 450px) {
+        & {
+          width: 145px;
+        }
+      }
+      @media only screen and (max-width: 400px) {
+        & {
+          width: 125px;
+        }
+      }
+    }
   }
 }

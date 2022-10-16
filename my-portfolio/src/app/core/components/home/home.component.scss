@@ -57,26 +57,26 @@
         }
       }
       .social-network {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
         display: flex;
         object-fit: cover;
-        opacity: 0.5;
+        opacity: 0.8;
         transition: all 0.5s ease;
         &:hover {
           opacity: 1;
-          transform: scale(1.2);
+          transform: scale(1.1);
         }
         @media only screen and (max-width: 600px) {
           & {
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
           }
         }
         @media only screen and (max-width: 500px) {
           & {
-            width: 25px;
-            height: 25px;
+            width: 20px;
+            height: 20px;
           }
         }
       }

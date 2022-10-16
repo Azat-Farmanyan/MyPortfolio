@@ -223,6 +223,14 @@ body {
     background-color: var(--light-violet);
   }
 }
+.white-bg {
+  background-color: var(--white);
+  color: var(--violet);
+  &:hover {
+    color: var(--white);
+    background-color: var(--light-violet);
+  }
+}
 .light-black-bg {
   background-color: var(--light-black);
   &:hover {

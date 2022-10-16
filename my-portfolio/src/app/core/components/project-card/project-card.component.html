@@ -1,8 +1,14 @@
 <div class="project-card">
   <div class="project-card-body">
     <div class="left-side">
-      <h4 class='bold-title'>{{project.title}}</h4>
-      <p class='normal-text'>{{project.description}}</p>
+      <div (click)="description()" class="title-block">
+        <h4 class='bold-title'>{{project.title}}</h4>
+        <img class='arrow-down' [src]="descriptionStatus?pathArrowUp:pathArrowDown" alt="arrow-down">
+      </div>
+      <p *ngIf="descriptionStatus" class='normal-text'>{{project.description}}</p>
+      <!-- <p (click)="showDescription()" class='normal-text'>{{project.description | shortTheSentence:descriptionSize}}</p> -->
+      <!-- <button class='btn light-black-bg'>More...</button> -->
+
       <div class="tools">
         <div *ngFor="let tool of project.tools" class="tool">
           <img [src]="pathToLogos+tool.img" [alt]="tool.name">

@@ -9,6 +9,8 @@ import { SkillCardComponent } from './components/skill-card/skill-card.component
 import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
 import { BorderColorDirective } from './directives/border-color.directive';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { FilterBySizePipe } from './pipes/filter-by-size.pipe';
+import { ShortTheSentencePipe } from './pipes/short-the-sentence.pipe';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     SkillCardComponent,
     BorderColorDirective,
     CarouselComponent,
+    FilterBySizePipe,
+    ShortTheSentencePipe,
   ],
   imports: [CommonModule, AngularTypewriterEffectModule],
   exports: [HomeComponent, AboutComponent, SkillsComponent, ProjectsComponent],

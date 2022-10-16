@@ -36,6 +36,20 @@
           padding: 20px;
         }
       }
+      .title-block {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .arrow-down {
+          object-fit: cover;
+          height: 9px;
+          transition: all 0.5s ease;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
       .tools {
         display: flex;
         gap: 15px;
