@@ -1,8 +1,8 @@
 .project-card {
+  width: 100%;
   max-width: 1360px;
   margin-bottom: 50px;
   transition: all 1s ease;
-
   @media only screen and (max-width: 550px) {
     & {
       margin-bottom: 40px;
@@ -17,12 +17,16 @@
       }
     }
     .left-side {
+      border-radius: 3px 0px 0px 3px;
+
       display: flex;
       flex-direction: column;
       gap: 15px;
 
       width: 100%;
       max-width: 600px;
+      // width: 700px;
+
       background-color: var(--light-black);
       padding: 40px;
       @media only screen and (max-width: 900px) {
@@ -80,11 +84,14 @@
     }
     .right-side {
       background-color: var(--light-black);
+      max-width: 868px;
       width: 100%;
-      min-height: 100%;
+      max-height: 100%;
+
       & img {
+        border-radius: 0px 3px 3px 0px;
         object-fit: cover;
-        // object-fit: contain;
+        // object-fit: fill;
 
         // object-position: left center;
         background-color: var(--light-black);
@@ -107,9 +114,9 @@
     }
   }
 }
-.left-side {
-  transition: all 0.5s ease;
-}
-.project-card:hover .left-side {
-  transform: scale(1.04);
-}
+// .left-side {
+//   transition: all 0.5s ease;
+// }
+// .project-card:hover .left-side {
+//   transform: scale(1.04);
+// }

@@ -1,21 +1,41 @@
 .projects-block {
+  max-width: 1360px;
+  margin: 0 auto;
+  @media only screen and (max-width: 600px) {
+    & {
+      margin: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
   .projects-body {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
+    // max-width: 1360px;
+    width: 100%;
+
     .projects {
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
       margin: 0 auto;
     }
-    .view-btn {
-      width: 185px;
-      margin: 0 auto;
-      @media only screen and (max-width: 450px) {
-        & {
-          width: 145px;
+    .view-btn-block {
+      display: flex;
+      justify-content: center;
+      .view-btn {
+        width: 135px;
+        margin: 0 auto;
+        @media only screen and (max-width: 450px) {
+          & {
+            width: 145px;
+          }
         }
-      }
-      @media only screen and (max-width: 400px) {
-        & {
-          width: 125px;
+        @media only screen and (max-width: 400px) {
+          & {
+            width: 125px;
+          }
         }
       }
     }

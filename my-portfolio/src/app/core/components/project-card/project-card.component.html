@@ -1,7 +1,8 @@
 <div class="project-card">
+
   <div class="project-card-body">
     <div class="left-side">
-      <div (click)="description()" class="title-block">
+      <div (click)="description()" class="title-block disable-text-select">
         <h4 class='bold-title'>{{project.title}}</h4>
         <img class='arrow-down' [src]="descriptionStatus?pathArrowUp:pathArrowDown" alt="arrow-down">
       </div>
@@ -14,15 +15,14 @@
           <img [src]="pathToLogos+tool.img" [alt]="tool.name">
         </div>
       </div>
-      <div class="buttons-block">
+      <div class="buttons-block disable-text-select">
         <a target='_blank' class='btn violet-bg' [href]="project.url">See Live</a>
         <a target='_blank' class='btn light-black-bg' [href]="project.sourceCodeUrl">Source Code</a>
       </div>
     </div>
     <div class="right-side">
-      <!-- <img [src]="project.img" [alt]="project.title"> -->
-      <!-- <img src="../../../../assets/images/azat-avatar.png" [alt]="project.title"> -->
       <img [src]="pathToImages+project.img" [alt]="project.title">
     </div>
   </div>
+
 </div>

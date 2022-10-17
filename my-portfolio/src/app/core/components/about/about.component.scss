@@ -37,24 +37,23 @@
       object-fit: cover;
       box-shadow: 0px 0px 87px -16px #260617;
       border-radius: 142.213px;
-      border-radius: 3px;
+      // border-radius: 3px;
 
-      @media only screen and (max-width: 1000px) {
+      @media only screen and (max-width: 1320px) {
         & {
           width: 224px;
           height: 227px;
-          left: -180px;
+          left: -200px;
           top: -130px;
         }
       }
       @media only screen and (max-width: 700px) {
         & {
           position: relative;
-          width: 197px;
-          height: 199px;
+          // width: 197px;
+          // height: 199px;
           top: -30px;
           left: 90px;
-          border-radius: 3px;
         }
       }
       @media only screen and (max-width: 600px) {

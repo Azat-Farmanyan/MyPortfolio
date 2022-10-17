@@ -111,6 +111,12 @@ body {
   color: #fff;
   background-color: var(--black);
 }
+.disable-text-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 .content {
   padding: 0 40px;
   @media only screen and (max-width: 600px) {
@@ -203,7 +209,7 @@ body {
 }
 .btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 30px;
   color: var(--white);
   font-weight: 400;
   font-size: 16px;
@@ -211,6 +217,12 @@ body {
   transition: all 0.5s ease;
   border-radius: 3px;
   @media only screen and (max-width: 800px) {
+    & {
+      padding: 5px 15px;
+      font-size: 14px;
+    }
+  }
+  @media only screen and (max-width: 300px) {
     & {
       padding: 5px 10px;
       font-size: 14px;
