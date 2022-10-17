@@ -6,9 +6,12 @@
         <a class='nav-item' href="#Biography">Biography</a>
         <a class='nav-item' href="#TechnicalSkills">Technical Skills</a>
         <a class='nav-item' href="#Projects">Projects</a>
-        <div class='active'>
-          <a class='nav-item' href="#Contact">Contact</a>
-        </div>
+        <a href="#Contact">
+          <div class='active'>
+            <a class='nav-item' href="#Contact">Contact</a>
+          </div>
+        </a>
+
       </nav>
       <ng-template #burgerIcon>
         <img class='open-burger' (click)='openBurger()' src="../../../../assets/icons/burger.png" alt="burgerIcon">
