@@ -1,0 +1,109 @@
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 17));
+            transform: translateX(calc(-250px * 17));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 17));
+            transform: translateX(calc(-250px * 17));
+  }
+}
+
+.slider {
+  -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+          box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: 200px auto 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+@media only screen and (max-width: 700px) {
+  .slider {
+    height: 80px;
+    margin: 80px auto 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .slider {
+    height: 50px;
+    margin: 80px auto 0;
+  }
+}
+
+.slider::before, .slider::after {
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  -webkit-animation: scroll 90s linear infinite;
+          animation: scroll 90s linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider .slide-track:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.slider .slide {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 90px;
+}
+
+.slider .slide img {
+  height: 100px;
+  max-width: 250px;
+}
+
+@media only screen and (max-width: 700px) {
+  .slider .slide {
+    margin: 0 40px;
+  }
+  .slider .slide img {
+    max-height: 80px;
+    max-width: 250px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .slider .slide {
+    margin: 0 30px;
+  }
+  .slider .slide img {
+    max-height: 50px;
+    max-width: 250px;
+  }
+}

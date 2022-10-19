@@ -1,0 +1,209 @@
+.footer {
+  background-color: var(--light-black);
+  padding: 100px 0;
+  margin-top: 150px;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer {
+    margin-top: 90px;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .footer {
+    margin-top: 60px;
+    padding: 50px 0;
+  }
+}
+
+.footer .footer-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 610px) {
+  .footer .footer-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer .footer-body .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+
+.footer .footer-body .header img {
+  height: 20px;
+}
+
+@media only screen and (max-width: 610px) {
+  .footer .footer-body .header img {
+    height: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.footer .footer-body .header .page-logo {
+  color: var(--white);
+}
+
+.footer .footer-body .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.footer .footer-body .contacts .contacts-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+.footer .footer-body .contacts .contact-item {
+  color: var(--gray);
+}
+
+.footer .footer-body .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.footer .footer-body .nav .nav-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+.footer .footer-body .nav .nav-body .nav-item a {
+  cursor: pointer;
+  color: var(--gray);
+}
+
+.footer .footer-body .nav .nav-body .nav-item a:hover {
+  color: var(--white);
+}
+
+.social-network-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .social-network-block {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .social-network-block {
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .social-network-block {
+    gap: 25px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .social-network-block {
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  .social-network-block {
+    gap: 15px;
+  }
+}
+
+@media only screen and (max-width: 270px) {
+  .social-network-block {
+    gap: 10px;
+  }
+}
+
+.social-network-block .social-network {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.social-network-block .social-network:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media only screen and (max-width: 1100px) {
+  .social-network-block .social-network {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .social-network-block .social-network {
+    width: 20px;
+    height: 20px;
+  }
+}

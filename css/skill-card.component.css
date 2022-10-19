@@ -1,0 +1,83 @@
+.card {
+  background: var(--light-black);
+  border-radius: 3px;
+  width: 100%;
+  max-width: 390px;
+  height: 122px;
+  padding: 30px 30px 30px 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 400px) {
+  .card {
+    padding: 25px 25px 25px 120px;
+    height: 91px;
+  }
+}
+
+.card .card-logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 90px;
+  max-height: 119px;
+  position: absolute;
+  left: 30px;
+  top: -30px;
+}
+
+@media only screen and (max-width: 400px) {
+  .card .card-logo {
+    max-width: 70px;
+  }
+}
+
+.card .card-text {
+  cursor: context-menu;
+}
+
+.border-animation {
+  -webkit-box-shadow: 0.43981px 16.9943px 145px rgba(241, 101, 41, 0.05), 0.28506px 11.0148px 84.919px rgba(241, 101, 41, 0.037963), 0.16941px 6.54596px 46.1852px rgba(241, 101, 41, 0.0303704), 0.08796px 3.39886px 23.5625px rgba(241, 101, 41, 0.025), 0.03584px 1.38472px 11.8148px rgba(241, 101, 41, 0.0196296), 0.00814px 0.31471px 5.70602px rgba(241, 101, 41, 0.012037);
+          box-shadow: 0.43981px 16.9943px 145px rgba(241, 101, 41, 0.05), 0.28506px 11.0148px 84.919px rgba(241, 101, 41, 0.037963), 0.16941px 6.54596px 46.1852px rgba(241, 101, 41, 0.0303704), 0.08796px 3.39886px 23.5625px rgba(241, 101, 41, 0.025), 0.03584px 1.38472px 11.8148px rgba(241, 101, 41, 0.0196296), 0.00814px 0.31471px 5.70602px rgba(241, 101, 41, 0.012037);
+  --border-width: 1px;
+  position: relative;
+  border-radius: var(--border-width);
+}
+
+.border-animation::after {
+  position: absolute;
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(60deg, #181823, white);
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+  -webkit-animation: moveGradient 4s alternate infinite;
+          animation: moveGradient 4s alternate infinite;
+}
+
+@-webkit-keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
