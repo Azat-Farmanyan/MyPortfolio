@@ -37,6 +37,26 @@ export class ProjectsService {
       sourceCodeUrl: 'https://github.com/Azat-Farmanyan/rs-front-azat',
     },
     {
+      title: 'Blot App',
+      description:
+        'Blot is a game widely played all over the world and it is the most preferred card game among the players. The program was created in order to conveniently and quickly write the scores of the players.',
+      img: 'blot.jpg',
+      tools: [
+        this.skill('Angular'),
+        this.skill('html'),
+        this.skill('CSS'),
+        this.skill('JavaScript'),
+        this.skill('Sass'),
+        this.skill('TypeScript'),
+
+        this.instrument('vscode'),
+        this.instrument('Adobe Photoshop'),
+        this.instrument('Figma'),
+      ],
+      url: 'https://steady-biscotti-58c415.netlify.app/',
+      sourceCodeUrl: 'https://github.com/Azat-Farmanyan/blot-app',
+    },
+    {
       title: 'Bookshop',
       description:
         'The user will be able to view the catalog of books, see the description of a particular book, add a book to the basket, select a suitable date and address for delivery.',

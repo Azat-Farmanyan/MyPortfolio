@@ -19,7 +19,7 @@ export class SocialMediaService {
     {
       img: 'akar-icons_linkedin-box-fill.png',
       name: 'linkedin',
-      url: 'https://ge.linkedin.com/',
+      url: 'https://www.linkedin.com/in/azat-farmanyan-607305254/',
     },
     {
       img: 'ant-design_facebook-filled.png',
